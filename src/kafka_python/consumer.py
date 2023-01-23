@@ -49,8 +49,7 @@ def main():
                 # Extract the (optional) key and value, and print.
 
                 print(
-                    """Consumed event from topic {topic}:
-                    key = {key:12} value = {value:12}""".format(
+                    "Consumed event from topic {topic}: key = {key:12} value = {value:12}".format(  # noqa: E501
                         topic=msg.topic(),
                         key=msg.key().decode("utf-8"),
                         value=msg.value().decode("utf-8"),
