@@ -30,10 +30,7 @@ def main():
             print("ERROR: Message failed delivery: {}".format(err))
         else:
             print(
-                """Produced event to topic {topic}:
-                key = {key:12}
-                value = {value:12}
-                """.format(
+                "Produced event to topic {topic}: key = {key:12} value = {value:12}".format(  # noqa: E501
                     topic=msg.topic(),
                     key=msg.key().decode("utf-8"),
                     value=msg.value().decode("utf-8"),
