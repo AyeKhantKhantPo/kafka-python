@@ -1,4 +1,4 @@
-# kafka-python
+# My kafka
 
 Python client applications which produce and consume messages from an Apache Kafka cluster.
 
@@ -6,6 +6,7 @@ Python client applications which produce and consume messages from an Apache Kaf
 - python3.8+
 - docker
 - poetry
+- kafka-python
 - confluent-kafka
 
 #### Set up a Kafka broker with docker
@@ -15,8 +16,10 @@ Python client applications which produce and consume messages from an Apache Kaf
 ```
 $ source scripts/setup
 $ poetry shell
-$ producer getting_started.ini
-$ consumer getting_started.ini
+$ producer
+$ consumer
+$ confluent_producer getting_started.ini
+$ confluent_consumer getting_started.ini
 ```
 
 (OR)
@@ -26,6 +29,8 @@ $ python3.8 -m venv .venv
 $ source .venv/bin/activate
 $ python -m pip install --upgrade pip
 $ python -m pip install .
-$ producer getting_started.ini
-$ consumer getting_started.ini
+$ producer
+$ consumer
+$ confluent_producer getting_started.ini
+$ confluent_consumer getting_started.ini
 ```

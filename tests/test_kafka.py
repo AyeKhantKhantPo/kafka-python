@@ -1,4 +1,4 @@
-from kafka_python import __version__
+from my_kafka import __version__
 
 
 def test_version():
